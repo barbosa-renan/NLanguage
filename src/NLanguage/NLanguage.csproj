@@ -2,6 +2,22 @@
 
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
+
+		<PackageId>NLanguage</PackageId>
+		<Version>1.0.0</Version>
+		<icon>https://drive.google.com/file/d/1hAMK0cxjpCKTcckvnpQaCyr_E9WCYow2/view?usp=sharing</icon>
+		<License>MIT</License>
+		<Authors>Renan Barbosa</Authors>
+		<Company>renanbarbosa.io</Company>
+		<PackageDescription>Translations in back-end made easy</PackageDescription>
+		<Description>Translations in back-end made easy</Description>
+		<RepositoryUrl>https://github.com/barbosa-renan/NLanguage</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/barbosa-renan/NLanguage</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageTags>Domain;DDD;Translation;Back-End;.NET;NLanguage</PackageTags>
+		<Title>NLanguage</Title>
+		<Summary>NLanguage is a easy way to translate strings in .NET projects using .json files.</Summary>
 	</PropertyGroup>
 
 	<ItemGroup>
