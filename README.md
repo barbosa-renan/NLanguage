@@ -5,7 +5,7 @@ NLanguage is a easy way to translate terms in your API projects using IStringLoc
 
 | Package |  Version | Downloads |
 | ------- | ----- | ----- |
-| `NLanguage` | [![NuGet](https://img.shields.io/badge/nuget-1.0.2-blue.svg)](https://www.nuget.org/packages/NLanguage) | [![Nuget](https://img.shields.io/badge/downloads-%2B30-green)](https://www.nuget.org/packages/NLanguage) |
+| `NLanguage` | [![NuGet](https://img.shields.io/badge/nuget-1.0.3-blue.svg)](https://www.nuget.org/packages/NLanguage) | [![Nuget](https://img.shields.io/badge/downloads-%2B50-green)](https://www.nuget.org/packages/NLanguage) |
 
 
 ### Dependencies
@@ -64,19 +64,16 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 
   ...
   
-// In other classes, use IStringLocalizer
-private readonly IStringLocalizer<YourClass> _localizer;
+// In other classes, use ITranslator
+private readonly ITranslator _translator;
 
-public Translator(IStringLocalizer<YourClass> localizer)
+public HelloController(ITranslator translator)
 {
-    _localizer = localizer;
+    _translator = translator;
 }
 
   ...
-  
-public string Translate(string key)
-{
-    if (string.IsNullOrEmpty(key)) return key;
-    return _localizer[key];
-}
+
+//Then
+return _translator.Translate("key-name");
 ```
