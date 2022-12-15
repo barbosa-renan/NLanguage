@@ -4,7 +4,7 @@
 		<TargetFramework>netstandard2.0</TargetFramework>
 
 		<PackageId>NLanguage</PackageId>
-		<Version>1.0.2</Version>
+		<Version>1.0.3</Version>
 		<icon>https://drive.google.com/file/d/1hAMK0cxjpCKTcckvnpQaCyr_E9WCYow2/view?usp=sharing</icon>
 		<License>MIT</License>
 		<Authors>Renan Barbosa</Authors>
@@ -30,7 +30,7 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
 		<PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="7.0.0" />
-		<PackageReference Include="Microsoft.Extensions.Localization" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Localization" Version="7.0.1" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 	</ItemGroup>
 

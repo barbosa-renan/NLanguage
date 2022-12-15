@@ -71,7 +71,7 @@ namespace NLanguage
 
                 string result = GetValueFromJSON(key, Path.GetFullPath(relativeFilePath));
 
-                if (!string.IsNullOrEmpty(result)) 
+                if (!string.IsNullOrEmpty(result))
                     _cache.SetString(cacheKey, result);
 
                 return result;

@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Localization;
 using NLanguage.Middlewares;
+using NLanguage.Tools;
 
 namespace NLanguage.Extensions
 {
@@ -11,6 +12,7 @@ namespace NLanguage.Extensions
             services.AddLocalization();
             services.AddSingleton<TermLocalizerMiddleware>();
             services.AddSingleton<IStringLocalizerFactory, TermLocalizerFactory>();
+            services.AddScoped<ITranslator, Translator>();
             return services;
         }
     }
